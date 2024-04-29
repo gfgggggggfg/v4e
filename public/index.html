@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+  <link rel="shortcut icon" href="/assets/images/icon.png" type="image/png" />
   <title>Math Homework</title>
 
   <link rel="stylesheet" href="./css/master.css" />
 
-  <script src="public/uv/uv.bundle.js" charset="UTF-8"></script>
-  <script src="public/uv/uv.config.js"></script>
-  <script src="public/js/preload.js"></script>
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="/js/preload.js"></script>
 
   <script>
     atOptions = {
@@ -25,7 +25,7 @@
 <body theme="main">
   <nav>
     <div class="logo">
-      <img src="public/assets/images/icon.png" alt="Logo" draggable="false" />
+      <img src="/assets/images/icon.png" alt="Logo" draggable="false" />
       <h1>Art Class</h1>
     </div>
 
@@ -33,10 +33,10 @@
 
     <div class="navitems">
       <div class="navitem"><a selected href="/">Home</a></div>
-      <div class="navitem"><a href="public/gs.html">Games</a></div>
-      <div class="navitem"><a href="public/apps.html">Apps</a></div>
-      <div class="navitem"><a href="public/emulator.html">Emulator</a></div>
-      <div class="navitem"><a href="public/search.html">Search</a></div>
+      <div class="navitem"><a href="/gs.html">Games</a></div>
+      <div class="navitem"><a href="/apps.html">Apps</a></div>
+      <div class="navitem"><a href="/emulator.html">Emulator</a></div>
+      <div class="navitem"><a href="/search.html">Search</a></div>
     </div>
   </nav>
 
@@ -64,14 +64,14 @@
     </div>
 
     <div class="right">
-      <a href="public/settings.html">Settings</a>
-      <a href="public/about.html">About</a>
+      <a href="/settings.html">Settings</a>
+      <a href="/about.html">About</a>
     </div>
   </div>
 </body>
 
 <script>
-  fetch('public/assets/data/splash.json')
+  fetch('/assets/data/splash.json')
     .then((res) => res.json())
     .then((data) => {
       document.querySelector('#splash').innerHTML =
@@ -79,6 +79,6 @@
     })
 </script>
 
-<script src="public/js/index.js"></script>
+<script src="/js/index.js"></script>
 
 </html>
