@@ -3,13 +3,13 @@
 
 <head>
   <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
-  <title>Art Class</title>
+  <title>Math Homework</title>
 
   <link rel="stylesheet" href="./css/master.css" />
 
-  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-  <script src="/uv/uv.config.js"></script>
-  <script src="./js/preload.js"></script>
+  <script src="public/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="public/uv/uv.config.js"></script>
+  <script src="public/js/preload.js"></script>
 
   <script>
     atOptions = {
@@ -25,7 +25,7 @@
 <body theme="main">
   <nav>
     <div class="logo">
-      <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
+      <img src="public/assets/images/icon.png" alt="Logo" draggable="false" />
       <h1>Art Class</h1>
     </div>
 
@@ -33,10 +33,10 @@
 
     <div class="navitems">
       <div class="navitem"><a selected href="/">Home</a></div>
-      <div class="navitem"><a href="/gs.html">Games</a></div>
-      <div class="navitem"><a href="/apps.html">Apps</a></div>
-      <div class="navitem"><a href="/emulator.html">Emulator</a></div>
-      <div class="navitem"><a href="/search.html">Search</a></div>
+      <div class="navitem"><a href="public/gs.html">Games</a></div>
+      <div class="navitem"><a href="public/apps.html">Apps</a></div>
+      <div class="navitem"><a href="public/emulator.html">Emulator</a></div>
+      <div class="navitem"><a href="public/search.html">Search</a></div>
     </div>
   </nav>
 
@@ -44,8 +44,8 @@
     <h1>Welcome to <span>Art Class</span></h1>
     <p id="splash"></p>
     <br />
-    <button onclick="window.location.href='/search.html?q=https://discord.gg/tMaHQ2dyk5'" class="button play">
-      Join our Discord
+    <button onclick="window.location.href='/search.html?q=helpme.com'" class="button play">
+      I Need Help
     </button>
     <button onclick="launchab()" id="launchab" class="button play">
       Launch in about:blank
@@ -60,18 +60,18 @@
   <div class="links">
     <div class="left">
       <a href="https://github.com/art-class/v4">GitHub</a>
-      <a href="https://discord.gg/tMaHQ2dyk5">Discord</a>
+      <a href="https://daddy.com">Monkey</a>
     </div>
 
     <div class="right">
-      <a href="./settings.html">Settings</a>
-      <a href="./about.html">About</a>
+      <a href="public/settings.html">Settings</a>
+      <a href="public/about.html">About</a>
     </div>
   </div>
 </body>
 
 <script>
-  fetch('./assets/data/splash.json')
+  fetch('public/assets/data/splash.json')
     .then((res) => res.json())
     .then((data) => {
       document.querySelector('#splash').innerHTML =
@@ -79,6 +79,6 @@
     })
 </script>
 
-<script src="./js/index.js"></script>
+<script src="public/js/index.js"></script>
 
 </html>
